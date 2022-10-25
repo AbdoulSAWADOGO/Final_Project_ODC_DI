@@ -1,6 +1,6 @@
 asgiref==3.5.2
 dj-database-url==1.0.0
-django
+Django==4.1.2
 django-heroku==0.3.1
 psycopg2==2.9.4
 sqlparse==0.4.3
