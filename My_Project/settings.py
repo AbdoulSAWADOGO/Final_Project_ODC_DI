@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'fasoalerteprobleme.herokuapp.com',
-    'alertefasoprobleme.herokuapp.com',
+    # 'alertefasoprobleme.herokuapp.com',
     '127.0.0.1',
     'localhost',
     '102.180.21.251'
