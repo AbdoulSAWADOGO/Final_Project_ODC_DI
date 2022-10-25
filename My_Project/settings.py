@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-81l1@r)t9n11n7&w6ps02t)^-jv_nq6$xv1^!#&c4$*^9_wwm8
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'fasoalerteprobleme.herokuapp.com', 
+    'fasoalerteproblème.herokuapp.com', 
     '127.0.0.1',
     'localhost'
 ]
