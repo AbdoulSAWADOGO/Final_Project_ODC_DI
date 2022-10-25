@@ -600,7 +600,7 @@ ul.btn li:last-child {
 }
 
 .about .about_img {
-     background: url(../images/toto.jpg);
+     background: url(../images/toto.webp);
      background-size: 100% 100%;
      text-align: center;
      min-height: 700px;
