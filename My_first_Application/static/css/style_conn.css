@@ -1,0 +1,119 @@
+button {
+    background-color: #4B0082;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  span.psw {
+       display: block;
+       float: right;
+    }
+  
+    input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #C1C1C1;
+  }
+  .container {
+    padding: 15px;
+    display: block;
+  }
+  
+  .part{
+      background-size: 100%;
+      background-color: #88248A;
+      color: white;
+      width: 100%;
+      text-align: center;
+      /*background-image: linear-gradient(to right, rgba(57,20,67) rgba(139,43,164));*/
+      font-size: 25px;
+  }
+  section
+  {
+      display: flex;
+      flex-direction: row;
+  }
+  .titi{
+      width: 100%;
+      /*margin-left: 5%;*/
+      /*margin-right: 5%;*/
+      background-color: #E4E6E5;	
+  }
+  h2
+  {
+      text-align: center;
+      font-size: 30px;
+  }
+  .or{
+      text-align: center;
+  }
+  .fa-solid
+  {
+      color: white;
+      height: 10px;
+      font-size: 70px;
+      margin-top: 110px;
+  }
+  
+  .fa-brands
+  {
+      color: black;
+      height: 10px;
+      font-size: 30px;
+      display: inline-block;
+      justify-content: center;
+  }
+  .test{
+      text-align: center;
+  }
+  footer
+  {
+      color: black;
+      text-align: center;
+      font-size: 15px;
+      margin-top: 50px;
+  }
+  i{
+      margin-left: 10px;
+      /*margin-top: 70px;*/
+  }
+  h1
+  {
+      margin-top: 10px;
+  }
+  a
+  {
+      text-decoration: none;
+  }
+  
+  .part button
+  {
+      color: white;
+      width: 40%;
+      padding: 15px;
+      background-color: #33093E;
+      margin-top: 10px;
+      border-radius: 20px;
+      border: 1px solid white
+  }
+  
+  .fa
+  {
+      color: white;
+      height: 5px;
+      font-size: 20px;
+      margin-top: none;
+  }
+  .entete{
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+  

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+   {% load static %}
+
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Faso Alerte Problème</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+      <!-- style css -->
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.min.css' %}">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      {% block content %}
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <!-- <a href="POMPIERS.html"><img src="images/logo.png" alt="#" /></a> -->
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item d_none">
+                                 <a class="nav-link" href="Connexion.html">Connecter/Enregistrer<i class="fa fa-user-circle padd_right" aria-hidden="true"></i></a>
+                              </li>
+                              <li class="nav-item active">
+                                 <a class="nav-link" href="pompier.html">POMPIERS</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="ONEA.html">ONEA</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="SONABEL.html">SONABEL</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="autre.html">AUTRES</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="contact.html">NUMEROS URGENTS</a>
+                              </li>
+                              <li class="nav-item d_none">
+                                 <a class="nav-link" href="A_propos.html">A_PROPOS</a>                              </li>
+                             
+                           </ul>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header inner -->
+      <!-- end header -->
+      <!-- banner -->
+      <footer id="contact">
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="titlepage">
+                        <h2>Renseignements sur le problème</h2>
+                     </div>
+                  </div>
+                  <div class="col-md-8">
+                     <ul class="location_icon">
+                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a>SONABEL</li>
+                        <li><a href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></a>25 31 37 20 / 80 00 11 30</li>
+                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>sonabel@gmail.com</li>
+                     </ul>
+                  </div>
+                  <div class="col-md-6">
+                     <form id="request" class="main_form">
+                        <div class="row">
+                           <div class="col-md-12 ">
+                              <input class="contactus" placeholder="type d'alerte" type="text" name="type alerte"> 
+                           </div>
+                           <div class="col-md-12">
+                              <input class="contactus" placeholder="niveau du problème" type="text" name="niveau problème"> 
+                           </div>
+                          <!--  <div class="col-md-12">
+                              <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number">                          
+                           </div> -->
+                           <div class="col-md-12">
+                              <input class="contactus" placeholder="Commentaire sur le problème" type="text" name="commentaire problème"> 
+                           </div>
+                           <div class="col-sm-col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                              <button class="send_btn">Envoyer</button>
+                           </div>
+                           <div class="col-sm-col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                              <ul class="social_icon">
+                                 <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                 <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                 <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                                 <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="map">
+                        <figure><img src="{% static 'images/sonabel.jpg' %}" alt="#"/></figure>
+                     </div>
+                     <!-- <form class="bottom_form">
+                        <h3>Newsletter</h3>
+                        <input class="enter" placeholder="Enter your email" type="text" name="Enter your email">
+                        <button class="sub_btn">subscribe</button>
+                     </form> -->
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <!-- <div class="row">
+                     <div class="col-md-12">
+                        <p>Copyright 2019 All Right Reserved By <a href="https://html.design/"> Free  html Templates</a></p>
+                     </div>
+                  </div> -->
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- about -->
+      <div  class="about">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>L'amélioration de la productivité du personnel et la préservation d'un bon climat social</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-10 offset-md-1">
+                     <div class="about_img">
+                        <div class="about_box">
+                           <h3>Société Nationale d'Electricité du Burkina</h3>
+                           <p>Mission: La Société Nationale d’Electricité du Burkina (SONABEL) est une Société d’Etat depuis le 14 avril 1995. Son capital qui était de 46 milliards de francs CFA est passé à 63 308 270 000 de francs CFA depuis le 15 juillet 2013. Elle a son siège social à OUAGADOUGOU. En 1976 la SONABEL était un Etablissement Public à Caractère Industriel et Commercial (EPIC). Elle a connu de nombreuses transformations tant au niveau de sa structure financière (capital) que de sa dénomination. Elle fut appelée successivement Energie de l’Afrique Occidentale Française (ENERGIE AOF), ensuite Société Africaine d’Electricité (SAFELEC), puis Société Voltaïque d’Electricité (VOLTELEC).
+                           <!-- <a class="read_more">Read More</a> -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end about -->
+      
+      <!--  footer -->
+      
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="{% static 'js/jquery.min.js' %}"></script>
+      <script src="{% static 'js/popper.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
+      <!-- sidebar -->
+      <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+      <script src="{% static 'js/custom.js' %}"></script>
+      {% endblock content %}
+
+   </body>
+</html>

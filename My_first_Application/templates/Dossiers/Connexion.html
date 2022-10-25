@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style_conn.css' %}">
+    <title>Loging Page</title>
+  </head>
+  
+  <body>
+    <section>
+        <div class="titi">
+          <h2>Log In</h2>
+          <div class="entete">
+              <input class="input" type="text" name="e-mail" value="email...">
+              <input class="input" type="text" name="password" value="password...">
+              <button type="submit">LOG IN</button>
+                <label>
+                </label>
+          </div>
+              <div class="container">
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                  <span class="psw"> <a href="#">Forgot password?</a></span>
+              </div>
+              <div class="test">
+                <p class="or">Or Connect with</p>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+              <footer><b>2022</b></footer>
+          </div>
+
+        <div class="part">
+          <i class="fa-solid fa-user-plus"></i>
+          <h1>Hello Friend!</h1>
+          <p id="lili">Enter your personnal details and start journey whith us</p>
+        <a class="regis" href="submit">
+          <button>REGISTER<i class="fa fa-circle-arrow-right"></i></button>
+        </a>
+        </div>
+    </section>
+  
+
+      
+        
+  </body>
+</html>
