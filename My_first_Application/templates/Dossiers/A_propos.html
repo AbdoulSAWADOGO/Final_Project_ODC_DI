@@ -54,25 +54,26 @@
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
                               <li class="nav-item d_none">
-                                 <a class="nav-link" href="Connexion.html">Connecter/Enregistrer<i class="fa fa-user-circle padd_right" aria-hidden="true"></i></a>
+                                 <a class="nav-link" href="{% url 'connexion' %}">CONNECTER/ENREGISTRER<i class="fa fa-user-circle padd_right" aria-hidden="true"></i></a>
                               </li>
-                              <li class="nav-item active">
-                                 <a class="nav-link" href="pompier.html">POMPIERS</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="ONEA.html">ONEA</a>
+                              <li class="nav-item ">
+                                 <a class="nav-link" href="{% url 'pompiers' %}">POMPIERS</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="SONABEL.html">SONABEL</a>
+                                 <a class="nav-link" href="{% url 'onea' %}">ONEA</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="autre.html">AUTRES</a>
+                                 <a class="nav-link" href="{% url 'sonabel' %}">SONABEL</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="contact.html">NUMEROS URGENTS</a>
+                                 <a class="nav-link" href="{% url 'autres' %}">AUTRES</a>
                               </li>
-                              <li class="nav-item d_none">
-                                <a class="nav-link" href="A_propos.html">A_PROPOS</a>                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="{% url 'contact' %}">NUMEROS URGENTS</a>
+                              </li>
+                              <li class="nav-item d_none active">
+                                 <a class="nav-link" href="{% url 'apropos' %}">A_PROPOS</a>
+                              </li>
                              
                            </ul>
                         </div>

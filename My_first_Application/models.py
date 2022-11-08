@@ -1,25 +1,37 @@
+from email.policy import default
+from random import choices
+from secrets import choice
 from django.db import models
-from django.core.validators import MaxValueValidator ,MinValueValidator
-# Create your models here.
-from datetime import datetime, date
-#Must inherit from Django Model class
-class patient(models.Model):
-    first_name = models.CharField(max_length=30)
-    last_name = models.CharField(max_length=40)
-    birth_date = models.DateField()
-    nick_name = models.CharField(max_length=30)
-    has_pet = models.BooleanField(default=True)
-    number_pet = models.IntegerField(
-        default=1,
-        validators=[
-            MaxValueValidator(10),
-            MinValueValidator(1)
-        ]
-    )
-    def __str__(self):
-        return f'{self.first_name} {self.last_name}'
 
-    def person_age(self):
-        current_date = date.today()
-        current_age = current_date.year-self.birth_date.year
-        return f'{current_age}'
+# Create your models here.
+
+from datetime import datetime, date
+# Create your models here.
+from django.db import models #import the models package. This line is already existing as soon as we use 'startapp'
+from django.db.models import IntegerField, Model
+from django.core.validators import  MaxValueValidator, MinValueValidator 
+#Must inherit from Django Model class
+class citoyen(models.Model):
+    GENRE = (("HOMME",'HOMME'),("FEMME","FEMME"))
+    genre=models.CharField(max_length=20,choices=GENRE)
+    first_name = models.CharField(max_length=20)
+    last_name = models.CharField(max_length=30)
+    email=models.CharField(max_length=50, default="admin@default.com")
+    telephone=models.CharField(max_length=10)
+    
+    def __str__(self):
+        return self.last_name
+
+
+class alerte(models.Model):
+    type_de_probleme=models.CharField(max_length=50)
+    niveau_du_probleme=models.CharField(max_length=100)
+    commentaire_sur_le_probleme=models.CharField(max_length=400)
+    structure=models.CharField(default="ONEA", max_length=20)
+    def __str__(self):
+        return self.type_de_probleme
+
+
+
+
+
