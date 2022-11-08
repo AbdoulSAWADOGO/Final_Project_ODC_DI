@@ -11,13 +11,13 @@
   <body>
     <section>
         <div class="titi">
-          <h2>Log In</h2>
+          <h2>CONNEXION</h2>
           <div class="entete">
             <form method="post" action="{% url 'connexion' %}">
               {% csrf_token %}
-              <input class="input" type="text" name="username" placeholder="Nom d'utilisateur...">
-              <input class="input" type="text" name="password" placeholder="password...">
-              <button type="submit">LOG IN</button>
+              <input class="input" type="text" name="username" placeholder="Entrer le nom d'utilisateur...">
+              <input class="input" type="text" name="password" placeholder="Entrer le mot de passe...">
+              <button type="submit">LOGIN</button>
             </form>
                 <label>
                 </label>
