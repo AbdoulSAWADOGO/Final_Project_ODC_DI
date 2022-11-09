@@ -11,5 +11,6 @@ urlpatterns = [
     path('Dossiers/contact', views.contact, name='contact'),
     path('Dossiers/Connexion', views.connexion, name='connexion'),
     path('Dossiers/A_propos', views.apropos, name='apropos'),
+    path('Dossiers/account', views.account, name='account')
 
 ]

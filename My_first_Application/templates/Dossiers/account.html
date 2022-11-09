@@ -11,23 +11,27 @@
   <body>
     <section>
         <div class="titi">
-          <h2>CONNEXION</h2>
+          <h2>Création de compte</h2>
           <div class="entete">
             <form method="post" action="{% url 'connexion' %}">
               {% csrf_token %}
-              <input class="input" type="text" name="username" placeholder="Entrer le nom d'utilisateur...">
-              <input class="input" type="text" name="password" placeholder="Entrer le mot de passe...">
-              <button type="submit">Connectez-vous</button>
+              <input class="input" type="text" name="first_name" placeholder="Entrer votre nom...">
+              <input class="input" type="text" name="last_name" placeholder="Entrer votre prénom...">
+              <input class="input" type="text" name="user_name" placeholder="Entrer le nom d'utilisateur...">
+              <input class="input" type="text" name="email" placeholder="Entrer votre email...">
+              <input class="input" type="text" name="telephone" placeholder="Entrer votre numéro de téléphone...">
+              <input class="input" type="text" name="cnib" placeholder="Entrer votre numéro de cnib...">
+              <button type="submit">Enregistrer</button>
             </form>
                 <label>
                 </label>
           </div>
               <div class="container">
-                  <input type="checkbox" checked="checked" name="remember"> Remember me
-                  <span class="psw"> <a href="#">Forgot password?</a></span>
+                  {% comment %} <input type="checkbox" checked="checked" name="remember"> Remember me {% endcomment %}
+                  {% comment %} <span class="psw"> <a href="#">Forgot password?</a></span> {% endcomment %}
               </div>
               <div class="test">
-                <p class="or">Or Connect with</p>
+                {% comment %} <p class="or">Or Connect with</p> {% endcomment %}
                 <i class="fa-brands fa-facebook-f"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-github"></i>

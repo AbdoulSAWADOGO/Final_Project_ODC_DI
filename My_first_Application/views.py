@@ -3,9 +3,9 @@ from django.http  import HttpResponse
 
 from django.shortcuts import redirect
 from django.contrib.auth import authenticate, login 
-# from multiprocessing.spawn import is_forking
-# from django.shortcuts import render
-# from django.http import  HttpResponseRedirect,  HttpResponse
+from multiprocessing.spawn import is_forking
+from django.shortcuts import render
+from django.http import  HttpResponseRedirect,  HttpResponse
 from My_first_Application.models import citoyen, alerte
 
 
@@ -144,3 +144,7 @@ def connexion(request):
 
 def apropos(request):
     return render(request, 'Dossiers/A_propos.html')
+
+
+def account(request):
+    return render(request, 'Dossiers/account.html')
