@@ -15,10 +15,10 @@ class citoyen(models.Model):
     genre=models.CharField(max_length=20,choices=GENRE)
     first_name = models.CharField(max_length=20)
     last_name = models.CharField(max_length=30)
-    user_name = models.CharField(max_length=30)
-    email=models.CharField(max_length=50, default="admin@default.com")
-    telephone=models.CharField(max_length=10)
-    cnib=models.CharField(max_length=50, default="B6541025410")
+    user_name = models.CharField(max_length=30, default="toto")
+    email = models.CharField(max_length=50, default="admin@default.com")
+    telephone = models.CharField(max_length=20, default="64896986")
+    cnib = models.CharField(max_length=50, default="B6541025410")
 
     def __str__(self):
         return self.last_name
