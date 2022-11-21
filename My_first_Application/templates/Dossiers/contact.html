@@ -41,7 +41,7 @@
                      <div class="full">
                         <div class="center-desk">
                            <div class="logo">
-                              <!-- <a href="POMPIERS.html"><img src="images/logo.png" alt="#" /></a> -->
+                              <a><img src="{% static 'images/logo.png' %}" alt="#" /></a>
                            </div>
                         </div>
                      </div>
@@ -54,14 +54,17 @@
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
                               <li class="nav-item d_none">
+                                 <a class="nav-link" href="{% url 'account' %}">CREER COMPTE</a>
+                              </li>
+                              <li class="nav-item d_none">
                                  {% if request.user.is_authenticated %}
                                  <a class="nav-link" href="{% url 'connexion' %}">{{ request.user.username }}<i class="fa fa-user-circle padd_right" aria-hidden="true"></i></a>
                                  {% else %}
-                                 <a class="nav-link" href="{% url 'connexion' %}">CONNECTER/ENREGISTRER<i class="fa fa-user-circle padd_right" aria-hidden="true"></i></a>
+                                 <a class="nav-link" href="{% url 'connexion' %}">CONNECTER<i class="fa fa-user-circle padd_right" aria-hidden="true"></i></a>
                                  {% endif %}
                                  
                               </li>
-                              <li class="nav-item ">
+                              <li class="nav-item active">
                                  <a class="nav-link" href="{% url 'pompiers' %}">POMPIERS</a>
                               </li>
                               <li class="nav-item">
@@ -70,17 +73,14 @@
                               <li class="nav-item">
                                  <a class="nav-link" href="{% url 'sonabel' %}">SONABEL</a>
                               </li>
-                              <li class="nav-item ">
+                              <li class="nav-item">
                                  <a class="nav-link" href="{% url 'autres' %}">AUTRES</a>
                               </li>
-                              <li class="nav-item active">
+                              <li class="nav-item">
                                  <a class="nav-link" href="{% url 'contact' %}">NUMEROS URGENTS</a>
                               </li>
                               <li class="nav-item d_none">
                                  <a class="nav-link" href="{% url 'apropos' %}">A_PROPOS</a>
-                              </li>
-                              <li class="nav-item d_none">
-                                 <a class="nav-link" href="{% url 'account' %}">ACCOUNT</a>
                               </li>
                            </ul>
                         </div>
