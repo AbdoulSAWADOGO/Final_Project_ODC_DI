@@ -18,7 +18,11 @@
             <form method="post" action="{% url 'account' %}">
               {% csrf_token %}
                 <div class="col-md-12 ">
-                  <input class="contactus" placeholder="genre" type="text" name="genre"> 
+                  <select class="contactus" placeholder="genre" name="genre"> 
+                  <option value = "Homme">Homme</option>
+                  <option value = "Femme">Femme</option>
+
+                  </select>
                 </div>              
                 <div class="col-md-12 ">
                   <input class="contactus" placeholder="votre nom" type="text" name="first_name"> 
