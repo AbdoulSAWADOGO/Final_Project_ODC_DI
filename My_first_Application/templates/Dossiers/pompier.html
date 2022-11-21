@@ -113,7 +113,7 @@
                   </div>
                   <div class="col-md-6">
                      <h4>{{ message }}</h4>
-                     <form id="request" class="main_form" method="POST" action="">
+                     <form id="request" class="main_form" method="POST" action="" enctype="multipart/form-data">
                         {% csrf_token %}    
                         <div class="row">                     
                            <div class="col-md-12 ">
@@ -127,6 +127,9 @@
                            </div> -->
                            <div class="col-md-12">
                               <input class="contactus" placeholder="Commentaire sur le problème" type="text" name="commentaire"> 
+                           </div>
+                            <div class="col-md-12">
+                              <input class="contactus" placeholder="photo du problème" type="file" name="photo"> 
                            </div>
                            <div class="col-sm-col-xl-6 col-lg-6 col-md-6 col-sm-12">
                               <button class="send_btn">Envoyer</button>

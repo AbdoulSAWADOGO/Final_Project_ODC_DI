@@ -29,7 +29,8 @@ def onea(request):
                 structure = "ONEA",
                 type_de_probleme = request.POST['type_alerte'],
                 niveau_du_probleme = request.POST['niveau_problème'],
-                commentaire_sur_le_probleme = request.POST['commentaire']
+                commentaire_sur_le_probleme = request.POST['commentaire'],
+                profil = request.FILES['photo']
             )
             message = "Alerte créée avec succès"
         else :
@@ -55,7 +56,8 @@ def sonabel(request):
                 structure = "SONABEL",
                 type_de_probleme = request.POST['type_alerte'],
                 niveau_du_probleme = request.POST['niveau_problème'],
-                commentaire_sur_le_probleme = request.POST['commentaire']
+                commentaire_sur_le_probleme = request.POST['commentaire'],
+                profil = request.FILES['photo']
             )
             message = "Alerte créée avec succès"
         else :
@@ -81,7 +83,9 @@ def pompier(request):
                 structure = "POMPIERS",
                 type_de_probleme = request.POST['type_alerte'],
                 niveau_du_probleme = request.POST['niveau_problème'],
-                commentaire_sur_le_probleme = request.POST['commentaire']
+                commentaire_sur_le_probleme = request.POST['commentaire'],
+                profil = request.FILES['photo']
+
             )
             message = "Alerte créée avec succès"
         else :
@@ -107,7 +111,8 @@ def autres(request):
                 structure = "AUTRES",
                 type_de_probleme = request.POST['type_alerte'],
                 niveau_du_probleme = request.POST['niveau_problème'],
-                commentaire_sur_le_probleme = request.POST['commentaire']
+                commentaire_sur_le_probleme = request.POST['commentaire'],
+                profil = request.FILES['photo']
             )
             message = "Alerte créée avec succès"
         else :

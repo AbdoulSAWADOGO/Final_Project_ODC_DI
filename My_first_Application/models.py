@@ -26,6 +26,7 @@ class alerte(models.Model):
     niveau_du_probleme=models.CharField(max_length=100)
     commentaire_sur_le_probleme=models.CharField(max_length=400)
     structure=models.CharField(default="ONEA", max_length=20)
+    profil = models.ImageField(upload_to='upload/',null=True,blank=True)
     def __str__(self):
         return self.structure
 
