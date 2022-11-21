@@ -1,12 +1,12 @@
 from django.shortcuts import render
-from django.http  import HttpResponse
+# from django.http  import HttpResponse
 
 from django.shortcuts import redirect
 from django.contrib.auth import authenticate, login 
 from multiprocessing.spawn import is_forking
-from django.shortcuts import render
+# from django.shortcuts import render
 from django.http import  HttpResponseRedirect,  HttpResponse
-from My_first_Application.models import citoyen, alerte
+from My_first_Application.models import  alerte, UserCitoyen
 
 
 
@@ -121,8 +121,7 @@ def autres(request):
 def contact(request):
     return render(request, 'Dossiers/contact.html')
 
-def connexion(request):
-    
+def connexion(request): 
     error={}
     print("connexion")
     if request.method == "POST":
@@ -147,4 +146,42 @@ def apropos(request):
 
 
 def account(request):
-    return render(request, 'Dossiers/account.html')
+    error={}
+    message=''
+    if request.method == "POST":
+        if "genre" not in request.POST:
+            error["genre"]="genre non remplit"
+        if "first_name" not in request.POST:
+            error["firs_name"]="nom non remplit"
+        if "last_name" not in request.POST:
+            error["last_name"]="prénom non remplit"
+        if "user_name" not in request.POST:
+            error["user_name"]="nom d'utilisateur non remplit"
+        if "email" not in request.POST:
+            error["email"]="email non remplit"
+        if "telephone" not in request.POST:
+            error["telephone"]="telephone non remplit"
+        if "cnib" not in request.POST:
+            error["cnib"]="cnib non remplit"
+        print(error)
+        if len(error) == 0:
+            user = UserCitoyen.objects.create_user(
+                genre = request.POST['genre'],
+                first_name = request.POST['first_name'],
+                last_name = request.POST['last_name'],
+                username = request.POST['user_name'],
+                email = request.POST['email'],
+                telephone = request.POST['telephone'],
+                cnib = request.POST['cnib']
+            )
+            user.set_password(request.POST['Password'])
+            user.save()
+            # message = "user créé avec succès"
+            return redirect('connexion')
+        else :
+            message = "Ohhhh! une erreur s'est produite"  
+    context = {
+        'message' : message,
+        'error' : error,
+    }  
+    return render(request, 'Dossiers/account.html', context)

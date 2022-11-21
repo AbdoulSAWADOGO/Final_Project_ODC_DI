@@ -13,14 +13,38 @@
         <div class="titi">
           <h2>Création de compte</h2>
           <div class="entete">
-            <form method="post" action="{% url 'connexion' %}">
+            <h4>{{ message }}</h4>
+            <p>{{ error }}</p>
+            <form method="post" action="{% url 'account' %}">
               {% csrf_token %}
-              <input class="input" type="text" name="first_name" placeholder="Entrer votre nom...">
-              <input class="input" type="text" name="last_name" placeholder="Entrer votre prénom...">
-              <input class="input" type="text" name="user_name" placeholder="Entrer le nom d'utilisateur...">
+                <div class="col-md-12 ">
+                  <input class="contactus" placeholder="genre" type="text" name="genre"> 
+                </div>              
+                <div class="col-md-12 ">
+                  <input class="contactus" placeholder="votre nom" type="text" name="first_name"> 
+                </div> 
+                <div class="col-md-12 ">
+                  <input class="contactus" placeholder="votre prénom" type="text" name="last_name"> 
+                </div>
+                <div class="col-md-12 ">
+                  <input class="contactus" placeholder="votre nom d'utilisateur" type="text" name="user_name"> 
+                </div>
+                <div class="col-md-12 ">
+                  <input class="contactus" placeholder="votre mail" type="text" name="email"> 
+                </div>
+                <div class="col-md-12 ">
+                  <input class="contactus" placeholder="votre numéro de téléphone" type="text" name="telephone"> 
+                </div>
+                <div class="col-md-12 ">
+                  <input class="contactus" placeholder="votre CNIB" type="text" name="cnib"> 
+                </div>    
+                <div class="col-md-12 ">
+                  <input class="contactus" placeholder="votre mot de passe" type="text" name="Password"> 
+                </div>            
+                {% comment %} <input class="input" type="text" name="user_name" placeholder="Entrer le nom d'utilisateur...">
               <input class="input" type="text" name="email" placeholder="Entrer votre email...">
               <input class="input" type="text" name="telephone" placeholder="Entrer votre numéro de téléphone...">
-              <input class="input" type="text" name="cnib" placeholder="Entrer votre numéro de cnib...">
+              <input class="input" type="text" name="cnib" placeholder="Entrer votre numéro de cnib..."> {% endcomment %}
               <button type="submit">Enregistrer</button>
             </form>
                 <label>
