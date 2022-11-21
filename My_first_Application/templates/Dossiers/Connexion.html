@@ -16,7 +16,7 @@
             <form method="post" action="{% url 'connexion' %}">
               {% csrf_token %}
               <input class="input" type="text" name="username" placeholder="Entrer le nom d'utilisateur...">
-              <input class="input" type="text" name="password" placeholder="Entrer le mot de passe...">
+              <input class="input" type="password" name="password" placeholder="Entrer le mot de passe...">
               <button type="submit">Connectez-vous</button>
             </form>
                 <label>
