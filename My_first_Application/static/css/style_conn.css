@@ -100,7 +100,7 @@ button {
   }
   h1
   {
-      margin-top: 10px;
+      margin-top: 10%;
   }
   a
   {
@@ -111,7 +111,7 @@ button {
   {
       color: white;
       width: 40%;
-      padding: 15px;
+      padding: 15%;
       background-color: #33093E;
       margin-top: 10px;
       border-radius: 20px;
