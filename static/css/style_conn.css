@@ -1,8 +1,15 @@
+@media screen and (max-width: 533px){
+    input[type=text], input[type=password] {
+      font-size: 300%;
+      padding: 8% 15%;
+      margin: 8% 0;
+      }
+}
 button {
     background-color: #4B0082;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+    padding: 8% 15%;
+    margin: 8% 0;
     border: none;
     cursor: pointer;
     width: 100%;
@@ -15,15 +22,16 @@ button {
   
     input[type=text], input[type=password] {
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 8% 15%;
+    margin: 8% 0;
     display: block;
     border: 1px solid #ccc;
     box-sizing: border-box;
     background-color: #C1C1C1;
+    height : 100%;
   }
   .container {
-    padding: 15px;
+    padding: 15%;
     display: block;
   }
   
@@ -34,7 +42,7 @@ button {
       width: 100%;
       text-align: center;
       /*background-image: linear-gradient(to right, rgba(57,20,67) rgba(139,43,164));*/
-      font-size: 25px;
+      font-size: 25%;
   }
   section
   {
@@ -42,15 +50,19 @@ button {
       flex-direction: row;
   }
   .titi{
-      width: 100%;
-      /*margin-left: 5%;*/
-      /*margin-right: 5%;*/
+      margin-right: 50%;
       background-color: #E4E6E5;	
+      padding: 8% 15%;
+      margin: 8% 0;
+      display: block;
+      width: 100%;
+      display: block;
+      box-sizing: border-box;
   }
   h2
   {
       text-align: center;
-      font-size: 30px;
+      font-size: 100%;
   }
   .or{
       text-align: center;
@@ -59,35 +71,36 @@ button {
   {
       color: white;
       height: 10px;
-      font-size: 70px;
+      font-size: 70%;
       margin-top: 110px;
   }
   
   .fa-brands
   {
       color: black;
-      height: 10px;
-      font-size: 30px;
+      height: 10%;
+      font-size: 30%;
       display: inline-block;
       justify-content: center;
   }
   .test{
       text-align: center;
+      font-size: 100%;
   }
   footer
   {
       color: black;
       text-align: center;
-      font-size: 15px;
+      font-size: 70%;
       margin-top: 50px;
   }
   i{
-      margin-left: 10px;
+      margin-left: 10%;
       /*margin-top: 70px;*/
   }
   h1
   {
-      margin-top: 10px;
+      margin-top: 10%;
   }
   a
   {
@@ -98,7 +111,7 @@ button {
   {
       color: white;
       width: 40%;
-      padding: 15px;
+      padding: 15%;
       background-color: #33093E;
       margin-top: 10px;
       border-radius: 20px;
@@ -109,11 +122,22 @@ button {
   {
       color: white;
       height: 5px;
-      font-size: 20px;
+      font-size: 20%;
       margin-top: none;
   }
-  .entete{
-      margin-left: 5%;
-      margin-right: 5%;
-  }
-  
+  /* .entete{ */
+      /* margin-left: 5%; */
+      /* margin-right: 5%; */
+  /* } */
+  .lili{
+    width: 100%;
+    padding: 8% 15%;
+    margin: 8% 0;
+    display: block;
+    border: 1px solid #ccc;
+    /* box-sizing: border-box; */
+    background-color: #C1C1C1;
+    height : 100%;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+ }
