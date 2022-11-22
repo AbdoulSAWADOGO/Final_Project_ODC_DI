@@ -8,19 +8,19 @@
     <title>Loging Page</title>
   </head>
   
-  <body>
-    <section>
+  <body >
+    <section >
         <div class="titi">
           <h2>Création de compte</h2>
           <div class="entete">
             <h4>{{ message }}</h4>
-            <p>{{ error }}</p>
+            {% comment %} <p>{{ error }}</p> {% endcomment %}
             <form method="post" action="{% url 'account' %}">
               {% csrf_token %}
-                <div class="col-md-12 ">
-                  <select class="contactus" placeholder="genre" name="genre"> 
-                  <option value = "Homme">Homme</option>
-                  <option value = "Femme">Femme</option>
+                <div class="entete">
+                  <select class="lili" placeholder="genre" name="genre"> 
+                  <option class="contactus" value = "Homme">Homme</option>
+                  <option class="contactus" value = "Femme">Femme</option>
                   </select>
                 </div>              
                 <div class="col-md-12 ">
