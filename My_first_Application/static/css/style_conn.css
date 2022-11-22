@@ -48,6 +48,7 @@ button {
   {
       display: flex;
       flex-direction: column-reverse;
+      height: 100%;
   }
   .titi{
       margin-right: 50%;
@@ -78,7 +79,7 @@ button {
   .fa-brands
   {
       color: black;
-      height: 10%;
+      height: 20%;
       font-size: 30%;
       display: inline-block;
       justify-content: center;
